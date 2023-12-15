@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RaskhodActivity">
+
+    <TextView
+        android:id="@+id/RaskhodZagolovok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/RaskhodZagolovok"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PerepadTextViewR"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/PerepadTextView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/PerepadR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RaskhodZagolovok"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/PlotnostTextViewR"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/PlotnostTextView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/PerepadR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PerepadTextViewR"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/DiameterTextViewR"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/HoleDiamRes"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/PerepadR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlotnostTextViewR"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/CoeffTextViewR"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/CoeffRes"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/PerepadR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DiameterTextViewR"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/PerepadR"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/Hint"
+        android:inputType="numberDecimal"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/PerepadTextViewR"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/PlotnostR"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/Hintplotnost"
+        android:inputType="numberDecimal"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/PlotnostTextViewR"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/HoleDiamR"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/Hint"
+        android:inputType="numberDecimal"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/DiameterTextViewR"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/CoeffR"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/HintCoeff"
+        android:inputType="numberDecimal"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/CoeffTextViewR"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonCalcR"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/button"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CoeffTextViewR" />
+
+    <TextView
+        android:id="@+id/ResultViewR"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/ResultTextViewR"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalcR"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/PerepadTextViewR"
+        app:layout_constraintStart_toStartOf="@+id/PerepadTextViewR"
+        app:layout_constraintTop_toBottomOf="@+id/PerepadTextViewR" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/PlotnostTextViewR"
+        app:layout_constraintStart_toStartOf="@+id/PlotnostTextViewR"
+        app:layout_constraintTop_toBottomOf="@+id/PlotnostTextViewR" />
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/DiameterTextViewR"
+        app:layout_constraintStart_toStartOf="@+id/DiameterTextViewR"
+        app:layout_constraintTop_toBottomOf="@+id/DiameterTextViewR" />
+
+    <View
+        android:id="@+id/divider13"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/CoeffTextViewR"
+        app:layout_constraintStart_toStartOf="@+id/CoeffTextViewR"
+        app:layout_constraintTop_toBottomOf="@+id/CoeffTextViewR" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

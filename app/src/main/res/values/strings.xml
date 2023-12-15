@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">HydroCalc</string>
+    <string name="LeakBut">Утечки через кольцевой зазор</string>
+    <string name="PerepadBut">Перепад давления</string>
+    <string name="RaskhodBut">Расход жидкости</string>
+    <string name="UtechkiTextView">Утечки через кольцевой зазор</string>
+    <string name="PerepadTextView">Перепад давления, \nкгс/см2</string>
+    <string name="ZazorTextViewRes">Радиальный зазор, \nмкм</string>
+    <string name="DiameterTextView">Диаметр золотника, \nмм</string>
+    <string name="ChisloKanavokTextView">Количество \n разгрузочных канавок</string>
+    <string name="DlinaKanavkiTextView">Длина разгрузочной канавки, мм</string>
+    <string name="DlinaZazoraTextView">Длина зазора вдоль оси, \nмм</string>
+    <string name="PlotnostTextView">Плотность жидкости, \nкг/м3</string>
+    <string name="VyazkostTextView">Кинематическая вязкость, сСт</string>
+    <string name="Hint">--</string>
+    <string name="Hintplotnost">860</string>
+    <string name="HintLinVyazkost">10</string>
+    <string name="HintCoeff">0.65</string>
+    <string name="button">Расчет</string>
+    <string name="ResultTextView">Утечки по зазору = %1$s см3/мин</string>
+    <string name="PerepadZagolovok">Перепад давления</string>
+    <string name="RaskhodZagolovok">Расход рабочей жидкости</string>
+    <string name="CoeffRes">Коэффициент \nрасхода</string>
+    <string name="HoleDiamRes">Диаметр отверстия, \nмм</string>
+    <string name="RaskhodRes">Расход рабочей жидкости, \nл/мин</string>
+    <string name="ResultTextViewP">Перепад давления = %1$s кгс/см2</string>
+    <string name="ResultTextViewR">Расход жидкости = %1$s л/мин</string>
+</resources>
